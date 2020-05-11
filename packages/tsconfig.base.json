@@ -12,9 +12,9 @@
     "noUnusedLocals": true,
     "pretty": true,
     "sourceMap": true,
-    "strict": true,
+    "strict": false,
     "strictNullChecks": true,
-    "target": "es2017",
+    "target": "es5",
     "incremental": true
   },
   "exclude": [

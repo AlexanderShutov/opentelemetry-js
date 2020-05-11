@@ -23,7 +23,6 @@ import {
   PluginInternalFilesVersion,
   TracerProvider,
 } from '@opentelemetry/api';
-import * as semver from 'semver';
 import * as path from 'path';
 
 /** This class represent the base to patch plugin. */
@@ -104,7 +103,7 @@ export abstract class BasePlugin<T> implements Plugin<T> {
     versionRange: string,
     outExtraModules: PluginInternalFiles
   ): void {
-    if (semver.satisfies(this.version!, versionRange)) {
+    if (true) {
       if (Object.keys(outExtraModules).length > 0) {
         this._logger.warn(
           'Plugin for %s@%s, has overlap version range (%s) for internal files: %o',
